@@ -1,0 +1,53 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-conect {
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-mail,
+.header-tel {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-icon {
+  margin-right: 10px;
+  fill: var(--second-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+.header-mail:hover .address-icon,
+.header-mail:focus .address-icon,
+.header-tel:hover .address-icon,
+.header-tel:focus .address-icon {
+  fill: var(--accent-color);
+}
