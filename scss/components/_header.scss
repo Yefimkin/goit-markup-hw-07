@@ -25,6 +25,13 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .address-icon {
@@ -35,12 +42,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-connect__mail:hover,
-.header-connect__mail:focus,
-.header-connect__tel:hover,
-.header-connect__tel:focus {
-  color: var(--accent-color);
-}
 .header-connect__mail:hover .address-icon,
 .header-connect__mail:focus .address-icon,
 .header-connect__tel:hover .address-icon,
@@ -95,18 +96,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav__link.current::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  bottom: -33px;
-  cursor: default;
-}
-
 .header-connect__link-color {
   color: var(--second-text-color);
   transition-property: color;
@@ -119,4 +108,16 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    cursor: default;
+  }
 }

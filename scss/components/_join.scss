@@ -23,12 +23,6 @@
   margin-right: 0;
 }
 
-.join-link:hover,
-.join-link:focus {
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
-
 .join-icon {
   fill: #ffffff;
   transition-property: fill;
@@ -47,4 +41,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
 }
