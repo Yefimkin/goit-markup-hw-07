@@ -117,19 +117,23 @@ img {
   color: var(--accent-color);
 }
 
+.header-connect__mail:hover .address-icon,
+.header-connect__mail:focus .address-icon,
+.header-connect__mail:hover .address-icon,
+.header-connect__mail:focus .address-icon,
+.header-connect__tel:hover .address-icon,
+.header-connect__tel:focus .address-icon,
+.header-connect__tel:hover .address-icon,
+.header-connect__tel:focus .address-icon {
+  fill: var(--accent-color);
+}
+
 .address-icon {
   margin-right: 10px;
   fill: var(--second-text-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-connect__mail:hover .address-icon,
-.header-connect__mail:focus .address-icon,
-.header-connect__tel:hover .address-icon,
-.header-connect__tel:focus .address-icon {
-  fill: var(--accent-color);
 }
 
 .header-connect__list,

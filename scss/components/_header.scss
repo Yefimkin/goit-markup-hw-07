@@ -32,6 +32,12 @@
   &:focus {
     color: var(--accent-color);
   }
+  &:hover .address-icon,
+  &:focus .address-icon,
+  &:hover .address-icon,
+  &:focus .address-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .address-icon {
@@ -40,13 +46,6 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-connect__mail:hover .address-icon,
-.header-connect__mail:focus .address-icon,
-.header-connect__tel:hover .address-icon,
-.header-connect__tel:focus .address-icon {
-  fill: var(--accent-color);
 }
 
 .header-connect__list,
