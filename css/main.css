@@ -796,8 +796,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -950,6 +949,10 @@ img {
   overflow: hidden;
 }
 
+.box:hover .overlay {
+  transform: translateY(0);
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -968,9 +971,5 @@ img {
   letter-spacing: 0.03em;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-.box:hover .overlay {
-  transform: translateY(0);
 }
 /*# sourceMappingURL=main.css.map */

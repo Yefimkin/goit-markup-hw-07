@@ -3,6 +3,10 @@
   width: 370px;
   height: 294px;
   overflow: hidden;
+
+  &:hover .overlay {
+    transform: translateY(0);
+  }
 }
 .overlay {
   position: absolute;
@@ -22,8 +26,4 @@
   letter-spacing: 0.03em;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-.box:hover .overlay {
-  transform: translateY(0);
 }
